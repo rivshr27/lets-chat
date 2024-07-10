@@ -14,13 +14,16 @@ const app = express();
 
 dotenv.config();
 
-app.use(cors());
+app.use(cors({
+  origin:'*'
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use(VerifyToken);
 
 const PORT = process.env.PORT || 8080;
+
 
 app.use("/api/room", chatRoomRoutes);
 app.use("/api/message", chatMessageRoutes);
@@ -32,7 +35,7 @@ const server = app.listen(PORT, () => {
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "*",
     credentials: true,
   },
 });

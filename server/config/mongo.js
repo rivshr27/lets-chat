@@ -5,10 +5,7 @@ dotenv.config();
 
 const MONGO_URI = process.env.MONGO_URI;
 
-mongoose.connect(MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(MONGO_URI);
 
 mongoose.connection.on("connected", () => {
   console.log("Mongo has connected succesfully");
