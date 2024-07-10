@@ -13,7 +13,7 @@ const getUserToken = async () => {
 export const initiateSocketConnection = async () => {
   const token = await getUserToken();
 
-  const socket = io("http://localhost:3000", {
+  const socket = io("http://localhost:4000", {
     auth: {
       token,
     },
