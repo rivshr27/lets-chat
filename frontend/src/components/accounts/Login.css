@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(31,107,23,1) 100%, rgba(0,212,255,1) 100%);
+  
+  }
+ 
+.login-container {
+    min-height: 100%;
+    display: flex;
+   position: relative;
+    justify-content: center;
+    padding: 3rem 1rem;
+  }
+  
+  .login-form-wrapper {
+    max-width: 28rem;
+    width: 100%;
+    space-y: 2rem;
+  }
+  
+  .login-heading {
+    margin-top: 1rem;
+    font-size: 1.875rem;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    font-family: "Alegreya", serif;
+  }
+  
+  .login-input-group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    background-color: #f9f9f9;
+    font-family: "Alegreya", serif;
+  }
+  
+  .input-field {
+    appearance: none;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #f9f9f9;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    font-size: 0.875rem;
+    font-family: "Alegreya", serif;
+  }
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  }
+  
+  .login-button {
+    width: 100%; /* Make the button take the full width of the container */
+    max-width: 300px; /* Set a max-width for the button, if you don't want it to be too wide */
+    padding: 0.75rem 1.5rem;
+    background-color: #0369a1;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-80%, 200%);
+  font-family: "Alegreya", serif;
+  }
+  
+  .login-button:hover {
+    background-color: #034c8c;
+  }
+  
+  .login-link {
+    font-size: 0.875rem;
+    color: #3b82f6;
+    text-decoration: none;
+    font-family: "Alegreya", serif;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password-visibility {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: #374151; /* Adjust color as needed */
+  }
+  
+  .toggle-password-visibility:focus {
+    outline: none;
+  }
+  

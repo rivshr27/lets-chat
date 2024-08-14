@@ -6,7 +6,7 @@ import {
   initiateSocketConnection,
 } from "../../services/ChatService";
 import { useAuth } from "../../contexts/AuthContext";
-
+import "./ChatLayout.css";  
 import ChatRoom from "../chat/ChatRoom";
 import Welcome from "../chat/Welcome";
 import AllUsers from "../chat/AllUsers";
@@ -107,6 +107,8 @@ export default function ChatLayout() {
   };
 
   return (
+    <>
+    <div className = "body-content">
     <div className="container mx-auto">
       <div className="min-w-full bg-white border-x border-b border-gray-200 dark:bg-gray-900 dark:border-gray-700 rounded lg:grid lg:grid-cols-3">
         <div className="bg-white border-r border-gray-200 dark:bg-gray-900 dark:border-gray-700 lg:col-span-1">
@@ -132,6 +134,9 @@ export default function ChatLayout() {
           <Welcome />
         )}
       </div>
+
     </div>
+    </div>
+    </>
   );
 }

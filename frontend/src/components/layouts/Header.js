@@ -26,7 +26,12 @@ export default function Header() {
             {currentUser && (
               <>
                 <button
-                  className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-lg text-sm p-2.5"
+                  className="text-gray-500
+                   dark:text-gray-400
+                    hover:bg-gray-100 
+                    dark:hover:bg-gray-700 
+                    focus:outline-none rounded-lg 
+                    text-sm p-2.5"
                   onClick={() => setModal(true)}
                 >
                   <LogoutIcon className="h-8 w-8" aria-hidden="true" />
@@ -34,7 +39,12 @@ export default function Header() {
 
                 <Link
                   to="/profile"
-                  className="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none rounded-full text-sm p-2.5"
+                  className="text-gray-500 
+                  dark:text-gray-400 
+                  hover:bg-gray-100 
+                  dark:hover:bg-gray-700 
+                  focus:outline-none 
+                  rounded-full text-sm p-2.5"
                 >
                   <img
                     className="h-8 w-8 rounded-full"
